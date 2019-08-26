@@ -1,6 +1,6 @@
 [{
         "id": 1,
-        "title": "Mercado",
+        "title": "Fazer mercado",
         "description": "comprar sabonete, shampoo e pasta de dente",
         "done": true,
         "canceled": false,
@@ -8,8 +8,8 @@
     },
     {
         "id": 2,
-        "title": "Exercício",
-        "description": "Caminhada pela manhã",
+        "title": "Caminhada matinal",
+        "description": "Fazer minha pela manhã",
         "done": false,
         "canceled": false,
         "date": 1566799200
@@ -28,6 +28,14 @@
         "description": "Enviar relatórios de vendas/mês",
         "done": false,
         "canceled": false,
+        "date": 1567404000
+    },
+    {
+        "id": 5,
+        "title": "Verificar extrato bancário",
+        "description": "Falar com minha gerente sobre problema no Internet banking.",
+        "done": false,
+        "canceled": true,
         "date": 1567404000
     }
 ]

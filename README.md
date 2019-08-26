@@ -11,10 +11,9 @@ O desafio proposto consiste numa **landing page**, onde testará as habilidades 
 
 ## Layout
 
-- Dentro da pasta [layout](./layout) possui um arquivo [Adobe XD](./layout/layout.xd) e [JPG](./layout/preview.jpg), use-os como referência para desenvolver o protótipo;
-- Use as **cores** definidas no [guideline](./layout/guideline.jpg);
-- As **fontes** utilizadas são: [Montserrat](https://www.google.com/fonts/specimen/Montserrat);
-- Caso necessário, na pasta [assets](./assets) possui as imagens já exportadas.
+- Dentro da pasta [layout](./layout) possui um arquivo [Adobe XD](./layout/layout.xd) e dois arquivos no formato JPG, use-os como referência para desenvolver o protótipo.
+- Use as **cores** definidas no [guideline colors](./layout/guideline-colors.jpg).
+- A **fonte** utilizada é: [Montserrat](https://www.google.com/fonts/specimen/Montserrat).
 
 ## Dicas
 
