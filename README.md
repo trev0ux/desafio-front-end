@@ -13,7 +13,7 @@ O desafio proposto consiste numa **landing page**, onde testará as habilidades 
 
 - Dentro da pasta [layout](./layout) possui um arquivo [Adobe XD](./layout/layout.xd) e [JPG](./layout/preview.jpg), use-os como referência para desenvolver o protótipo;
 - Use as **cores** definidas no [guideline](./layout/guideline.jpg);
-- As **fontes** utilizadas são: [Roboto](https://www.google.com/fonts/specimen/Roboto) e [Roboto Slab](https://www.google.com/fonts/specimen/Roboto+Slab);
+- As **fontes** utilizadas são: [Montserrat](https://www.google.com/fonts/specimen/Montserrat);
 - Caso necessário, na pasta [assets](./assets) possui as imagens já exportadas.
 
 ## Dicas
