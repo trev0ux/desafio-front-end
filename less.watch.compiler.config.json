@@ -1,7 +1,0 @@
-{
-    "allowedExtensions":["styles.less"],
-    "minified": false,
-    "sourceMap": false,
-    "watchFolder": "styles.less",
-    "outputFolder": "styles.css"
-}

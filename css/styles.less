@@ -1,0 +1,63 @@
+//Atributos
+@font-family: 'Montserrat', sans-serif;
+@primary-color:#0089FF;
+@line-height: 1em + 1em;
+@font-weight: bold;
+@font-variant: small-caps;
+@width: 80px;
+@height: 200px;
+@float: left;
+@margin: 20px;
+
+hr {
+  color: @primary-color;
+  height: 3px;
+  background-color: @primary-color;
+}
+ul {
+ list-style-type: none;
+ }
+
+div.name {
+  width: 190px;
+  height: 200px;
+  float: @float;
+  margin: @margin;
+}
+div.data{
+  width: 150px;
+  height: 200px;
+  float: @float;
+  margin: @margin;
+}
+div.acoes{
+  width: 140px;
+  height: 200px;
+  float: @float;
+  margin:@margin;
+}
+
+
+
+p {
+  font-family: @font-family;
+  line-height:@line-height;
+  color: @primary-color;
+  font-size: 20px;
+  font-variant: @font-variant;
+  font-weight: @font-weight;
+}
+
+.button.button {
+   border-top: 1px solid @primary-color;
+   background: @primary-color;
+   padding: 13.5px 27px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   color: #ffffff;
+   font-weight: @font-weight;
+   font-size: 14px;
+   font-family: @font-family;
+   font-variant: @font-variant;
+   }
