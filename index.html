@@ -13,80 +13,38 @@
   <div class="container">
     <div class="box">
       <hr>
-      <p>LISTA DE TAREFAS
-        <input type="button" name="botao-ok" value="nova tarefa" class="button">
-      </p>
+      <div class="topo">
+      <h2>LISTA DE TAREFAS
+      <input type="button" name="botao-ok" class="button" >
+      </h2>
+    </div>
+      <div class="filters">
+          <p1>nome</p1>
+          <p1>data</p1>
+          <p1>ações<p1>
+      </div>
       <div id="list" class="item">
         <div class="item-list-name">
-          <div class="text">
-            <p1>nome</p1>
+          <div>
+              <input type="checkbox" id="item" name="item1" value="Fazer mercado" onclick="mudaDiv(this)">
+            <label for="item">Fazer mercado</label>
           </div>
-          <input type="checkbox" id="item" name="scales" checked>
-          <label for="item">Fazer mercado</label>
         </div>
         <div class="item-list-date">
-          <div class="text">
-            <p1>data</p1>
-          </div>
-          <input id="date" type="date" value="2017-06-01">
+          <input id="date" type="date" value="2017-06-01"></input>
         </div>
         <div class="item-list-button">
-          <div class="text">
-            <p1>ações</p1>
-          </div>
-          <button name="button">Excluir</button><button name="button">Desativar</button>
+          <button name="button" class="excluir">excluir</button><button name="button" class="desativar">desativar</button>
         </div>
       </div>
-      <div id="list" class="item">
-        <div class="item-list-name">
-          <input type="checkbox" id="item" name="scales" checked>
-          <label for="item">Fazer mercado</label>
-        </div>
-        <div class="item-list-date">
-          <input id="date" type="date" value="2017-06-01">
-        </div>
-        <div class="item-list-button">
-          <button name="button">Excluir</button><button name="button">Desativar</button>
-        </div>
-      </div>
-      <div id="list" class="item">
-        <div class="item-list-name">
-          <input type="checkbox" id="item" name="scales" checked>
-          <label for="item">Fazer mercado</label>
-        </div>
-        <div class="item-list-date">
-          <input id="date" type="date" value="2017-06-01">
-        </div>
-        <div class="item-list-button">
-          <button name="button">Excluir</button><button name="button">Desativar</button>
-        </div>
-      </div>
-      <div id="list" class="item">
-        <div class="item-list-name">
-          <input type="checkbox" id="item" name="scales" checked>
-          <label for="item">Fazer mercado</label>
-        </div>
-        <div class="item-list-date">
-          <input id="date" type="date" value="2017-06-01">
-        </div>
-        <div class="item-list-button">
-          <button name="button">Excluir</button><button name="button">Desativar</button>
-        </div>
-      </div>
-      <div id="list" class="item">
-        <div class="item-list-name">
-          <input type="checkbox" id="item" name="scales" checked>
-          <label for="item">Fazer mercado</label>
-        </div>
-        <div class="item-list-date">
-          <input id="date" type="date" value="2017-06-01">
-        </div>
-        <div class="item-list-button">
-          <button name="button">Excluir</button><button name="button">Desativar</button>
-        </div>
-      </div>
+
     </div>
   </div>
 </body>
+<script>
+function mudaDiv(el) {
+document.getElementsByClassName("item")[0].style.backgroundColor = el.checked ? "#FBFFFF" : "";
+}
+</script>
 
 </html>
