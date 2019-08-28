@@ -9,6 +9,53 @@
 @float: left;
 @margin: 20px;
 
+body {
+        margin: 0px
+    }
+    .container {
+        width: 100vw;
+        height: 120vh;
+        background: #fffff;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .box {
+        width: 70%;
+        height: 600px;
+        background: #fff;
+        margin: 20px;
+    .item {
+      margin: 20px;
+      margin-left: -5px;
+    }
+    .item-list-name{
+      height:50px;
+      width:350px;
+      float:left;
+      margin: 7px;
+    }
+    .item-list-date{
+      height:50px;
+      width:300px;
+      float:left;
+      margin: 7px;
+    }
+    .item-list-button {
+      height:50px;
+      width:150px;
+      float:left;
+      margin: 7px;
+    }
+    }
+
+    button{
+      margin-left: 10px;
+    }
+
+
+
 hr {
   color: @primary-color;
   height: 3px;
@@ -17,27 +64,6 @@ hr {
 ul {
  list-style-type: none;
  }
-
-div.name {
-  width: 190px;
-  height: 200px;
-  float: @float;
-  margin: @margin;
-}
-div.data{
-  width: 150px;
-  height: 200px;
-  float: @float;
-  margin: @margin;
-}
-div.acoes{
-  width: 140px;
-  height: 200px;
-  float: @float;
-  margin:@margin;
-}
-
-
 
 p {
   font-family: @font-family;
@@ -48,9 +74,14 @@ p {
   font-weight: @font-weight;
 }
 
+p1 {
+margin-left: 30px;
+}
+
+
 .button.button {
    border-top: 1px solid @primary-color;
-   background: @primary-color;
+   background-color: @primary-color;
    padding: 13.5px 27px;
    -webkit-border-radius: 5px;
    -moz-border-radius: 5px;
@@ -60,4 +91,6 @@ p {
    font-size: 14px;
    font-family: @font-family;
    font-variant: @font-variant;
+   margin-left: 55%;
+   img: url(../img/add.png);
    }
