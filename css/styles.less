@@ -212,13 +212,50 @@ h2 {
 }
 
 .modal-contents {
-	height: 320px;
-	width: 270px;
+	height: 390px;
+	width: 350px;
 	background-color: #colors[1];
 	text-align: center;
 	padding: 10px;
 	position: relative;
 	border-radius: 4px;
+
+
+
+  .button-cancel{
+    position: absolute;
+    width: 129px;
+    height: 44px;
+    background: #colors[1];
+    border: 1px solid #colors[7];
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 30px 0px 0px 0px;
+
+    position: absolute;
+    font-family: @font-family;
+    font-weight: @font-weight;
+    font-variant: @font-variant;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #707070;
+  }
+
+  .button-add {
+    position: absolute;
+    width: 130px;
+    height: 44px;
+    margin: 30px 0px 0px 55%;
+    border-radius: 5px;
+
+    background-image: url(../img/button-modal.png);
+    align-items: center;
+
+  }
 }
 
 .form {
@@ -231,7 +268,7 @@ h2 {
 }
 
 input[type="text"] {
-	margin-left: 1px;
+	margin: 0px 1px 10px 0px;
 	display: block;
 	width: 90%;
 	padding: 10px;
