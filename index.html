@@ -16,21 +16,21 @@
     <div class="box">
       <hr>
       <div class="topo">
-      <h2>LISTA DE TAREFAS
-      <input type="button" name="botao-ok" class="button" >
-      </h2>
-    </div>
+        <h2>LISTA DE TAREFAS
+          <input type="button" name="botao-ok" class="button">
+        </h2>
+      </div>
       <div class="filters">
-          <span>nome</span>
-          <span>data</span>
-          <span>ações<span>
+        <span>nome</span>
+        <span>data</span>
+        <span>ações<span>
       </div>
       <main id="list" class="item">
-          <article class="item-list-name">
-              <input type="checkbox" id="title" name="item1" value="Fazer mercado" onclick="mudaDiv(this)">
-            <label for="title"></label>
-            <p id="descricao"> </p>
-          </article>
+        <article class="item-list-name">
+          <input type="checkbox" id="title" name="item1" value="Fazer mercado" onclick="mudaDiv(this)">
+          <label for="title"></label>
+          <p id="descricao"> </p>
+        </article>
         <article id="data" class="item-list-date"></article>
         <article class="item-list-button">
           <button name="button" class="excluir">excluir</button><button name="button" class="desativar">desativar</button>
@@ -40,9 +40,9 @@
   </div>
 </body>
 <script>
-function mudaDiv(el) {
-document.getElementsByClassName("item")[0].style.backgroundColor = el.checked ? "#FBFFFF" : "";
-}
+  function mudaDiv(el) {
+    document.getElementsByClassName("item")[0].style.backgroundColor = el.checked ? "#FBFFFF" : "";
+  }
 </script>
 
 </html>

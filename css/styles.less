@@ -15,9 +15,13 @@
   7: #707070;
 }
 
+/* reset básico */
+
+
 #body {
   margin: 0;
 }
+    /*CONTAINER*/
 .container {
   width: 100vw;
   height: 120vh;
@@ -26,13 +30,31 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+    @media (min-width: 1170px) {
+        .container {
+            max-width: 1170px;
+            padding: 0;
+        }
+    }
+
 }
+
+/* BOX */
 
 .box {
   width: 70%;
   height: 600px;
   background: #fff;
   margin: 20px;
+      margin: 0;
+      padding: 0;
+      -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+              box-sizing: border-box;
+
 
   .item {
     margin: 50px 20px 20px -5px;
