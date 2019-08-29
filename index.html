@@ -26,8 +26,9 @@
       <main id="list" class="item">
         <article class="item-list-name">
           <input type="checkbox" id="title" name="item1" value="Fazer mercado" onclick="mudaDiv(this)">
-          <label for="title">Fazer mercado</label>
-          <p id="descricao">comprar sabonete, shampoo e pasta de dente.</p>
+          <label for="title">Fazer mercado
+          <p>comprar sabonete, shampoo e pasta de dente.</p>
+          </label>
         </article>
         <article id="data" class="item-list-date"><a>20/08/2019</a></article>
         <article class="item-list-button">
@@ -58,6 +59,8 @@
 <script>
 function mudaDiv(el) {
   document.getElementsByClassName("item")[0].style.backgroundColor = el.checked ? "#FBFFFF" : "";
+  document.getElementsByClassName("item")[0].style.border = el.checked ? "0.1111px solid #F0F0F0" : "";
+
 }
 document.getElementById('button').addEventListener("click", function() {
   document.querySelector('.bg-modal').style.display = "flex";
