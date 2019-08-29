@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <script src="load.js"></script>
   <div></div>
   <div class="container">
     <div class="box">
@@ -27,7 +28,7 @@
       <main id="list" class="item">
           <article class="item-list-name">
               <input type="checkbox" id="title" name="item1" value="Fazer mercado" onclick="mudaDiv(this)">
-            <label for="title" id="title"></label>
+            <label for="title"></label>
             <p id="descricao"> </p>
           </article>
         <article id="data" class="item-list-date"></article>
@@ -37,7 +38,6 @@
       </main>
     </div>
   </div>
-  <script src="load.js"></script>
 </body>
 <script>
 function mudaDiv(el) {
