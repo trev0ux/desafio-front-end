@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <div></div>
   <div class="container">
     <div class="box">
       <hr>
@@ -19,27 +20,24 @@
       </h2>
     </div>
       <div class="filters">
-          <p1>nome</p1>
-          <p1>data</p1>
-          <p1>ações<p1>
+          <span>nome</span>
+          <span>data</span>
+          <span>ações<span>
       </div>
-      <div id="list" class="item">
-        <div class="item-list-name">
-          <div>
-              <input type="checkbox" id="item" name="item1" value="Fazer mercado" onclick="mudaDiv(this)">
-            <label for="item">Fazer mercado</label>
-          </div>
-        </div>
-        <div class="item-list-date">
-          <input id="date" type="date" value="2017-06-01"></input>
-        </div>
-        <div class="item-list-button">
+      <main id="list" class="item">
+          <article class="item-list-name">
+              <input type="checkbox" id="title" name="item1" value="Fazer mercado" onclick="mudaDiv(this)">
+            <label for="title" id="title"></label>
+            <p id="descricao"> </p>
+          </article>
+        <article id="data" class="item-list-date"></article>
+        <article class="item-list-button">
           <button name="button" class="excluir">excluir</button><button name="button" class="desativar">desativar</button>
-        </div>
-      </div>
-
+        </article>
+      </main>
     </div>
   </div>
+  <script src="load.js"></script>
 </body>
 <script>
 function mudaDiv(el) {
