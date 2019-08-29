@@ -76,6 +76,10 @@
     width: 300px;
     float: left;
     margin: 7px;
+    font-family: @font-family;
+    font-weight: @font-weight;
+    color: #colors[3];
+    font-size: 14px;
   }
 
   .item-list-button {
@@ -83,6 +87,7 @@
     width: 150px;
     float: left;
     margin: 7px;
+
   }
   .filters {
     height: 1%;
@@ -135,6 +140,17 @@ input[type=checkbox] + label {
   margin: 0.2em;
   cursor: pointer;
   padding: 0.2em;
+  font-family: @font-family;
+  font-weight: semi-bold;
+  font-size: 16px;
+  color: #colors[2];
+
+  .descricao {
+    font-weight: regular;
+    font-size: 12px;
+    margin: 3px 0px 0px 37px
+
+  }
 }
 
 input[type=checkbox] {
@@ -211,12 +227,11 @@ h2 {
 }
 
 .modal-contents {
-	height: 360px;
-	width: 350px;
+	height: 400px;
+	width: 320px;
 	background-color: #colors[1];
 	text-align: center;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 0px 0px 10px 10px;
 	position: relative;
 	border-radius: 4px;
 
@@ -230,7 +245,7 @@ h2 {
     border: 1px solid #colors[7];
     box-sizing: border-box;
     border-radius: 5px;
-    margin: 30px 0px 0px 0px;
+    margin: 25px 0px 0px 0px;
 
     position: absolute;
     font-family: @font-family;
@@ -249,7 +264,7 @@ h2 {
     position: absolute;
     width: 130px;
     height: 44px;
-    margin: 30px 0px 0px 55%;
+    margin: 25px 0px 0px 55%;
     border-radius: 5px;
 
     background-image: url(../img/button-modal.png);
