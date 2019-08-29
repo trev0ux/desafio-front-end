@@ -10,14 +10,12 @@
 </head>
 
 <body>
-  <script src="load.js"></script>
-  <div></div>
   <div class="container">
     <div class="box">
       <hr>
       <div class="topo">
         <h2>LISTA DE TAREFAS
-          <input type="button" name="botao-ok" class="button">
+          <input type="button" name="botao-ok" class="button" id="button">
         </h2>
       </div>
       <div class="filters">
@@ -28,21 +26,45 @@
       <main id="list" class="item">
         <article class="item-list-name">
           <input type="checkbox" id="title" name="item1" value="Fazer mercado" onclick="mudaDiv(this)">
-          <label for="title"></label>
-          <p id="descricao"> </p>
+          <label for="title">Fazer mercado</label>
+          <p id="descricao">comprar sabonete, shampoo e pasta de dente.</p>
         </article>
-        <article id="data" class="item-list-date"></article>
+        <article id="data" class="item-list-date"><a>20/08/2019</a></article>
         <article class="item-list-button">
           <button name="button" class="excluir">excluir</button><button name="button" class="desativar">desativar</button>
         </article>
       </main>
     </div>
   </div>
+  <!-- Modal Section -->
+    <div class="bg-modal">
+    	<div class="modal-contents">
+    		<div class="close">+</div>
+        <hr></hr>
+        <h2>nova tarefa</h2>
+    		<form action="" class="form">
+          <a>data</a>
+    			<input type="text">
+          <a>data</a>
+    			<input type="text">
+          <a>data</a>
+          <input type="text">
+    			<a href="#" class="button">adicionar tarefa</a>
+          <a href="#" class="button">cancelar</a>
+    		</form>
+    	</div>
+    </div>
 </body>
 <script>
-  function mudaDiv(el) {
-    document.getElementsByClassName("item")[0].style.backgroundColor = el.checked ? "#FBFFFF" : "";
-  }
-</script>
+function mudaDiv(el) {
+  document.getElementsByClassName("item")[0].style.backgroundColor = el.checked ? "#FBFFFF" : "";
+}
+document.getElementById('button').addEventListener("click", function() {
+  document.querySelector('.bg-modal').style.display = "flex";
+});
 
+document.querySelector('.close').addEventListener("click", function() {
+  document.querySelector('.bg-modal').style.display = "none";
+});
+</script>
 </html>
