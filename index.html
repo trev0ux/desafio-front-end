@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet/less" type="text/css" href="css/styles.less" />
   <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+  <script type="text/javascript" src="js/events.js"></script>
 </head>
 
 <body>
@@ -25,9 +26,9 @@
       </div>
       <main id="list" class="item">
         <article class="item-list-name">
-          <input type="checkbox" id="title" name="item1" value="Fazer mercado" onclick="mudaDiv(this)">
-          <label for="title">Fazer mercado
-          <p id="descrição" class="descricao">comprar sabonete, shampoo e pasta de dente.</p>
+          <input type="checkbox" id="check1" name="item1" value="Fazer mercado" onclick="mudaDiv(this)">
+          <label for="check1">Fazer mercado
+            <p id="descrição" class="descricao">comprar sabonete, shampoo e pasta de dente.</p>
           </label>
         </article>
         <article id="data" class="item-list-date"><a>20/08/2019</a></article>
@@ -35,39 +36,74 @@
           <button name="button" class="excluir">excluir</button><button name="button" class="desativar">desativar</button>
         </article>
       </main>
+      <main id="list" class="item">
+        <article class="item-list-name">
+          <input type="checkbox" id="check2" name="item1" value="Fazer mercado" onclick="mudaDiv(this1)">
+          <label for="check2">Fazer mercado
+            <p id="descrição" class="descricao">comprar sabonete, shampoo e pasta de dente.</p>
+          </label>
+        </article>
+        <article id="data" class="item-list-date"><a>20/08/2019</a></article>
+        <article class="item-list-button">
+          <button name="button" class="excluir">excluir</button><button name="button" class="desativar">desativar</button>
+        </article>
+      </main>
+      <main id="list" class="item">
+        <article class="item-list-name">
+          <input type="checkbox" id="check3" name="item1" value="Fazer mercado" onclick="mudaDiv(this2)">
+          <label for="check3">Fazer mercado
+            <p id="descrição" class="descricao">comprar sabonete, shampoo e pasta de dente.</p>
+          </label>
+        </article>
+        <article id="data" class="item-list-date"><a>20/08/2019</a></article>
+        <article class="item-list-button">
+          <button name="button" class="excluir">excluir</button><button name="button" class="desativar">desativar</button>
+        </article>
+      </main>
+      <main id="list" class="item">
+        <article class="item-list-name">
+          <input type="checkbox" id="check4" name="item1" value="Fazer mercado" onclick="mudaDiv(this3)">
+          <label for="check4">Fazer mercado
+            <p id="descrição" class="descricao">comprar sabonete, shampoo e pasta de dente.</p>
+          </label>
+        </article>
+        <article id="data" class="item-list-date"><a>20/08/2019</a></article>
+        <article class="item-list-button">
+          <button name="button" class="excluir">excluir</button><button name="button" class="desativar">desativar</button>
+        </article>
+      </main>
+      <main id="list" class="item">
+        <article class="item-list-name">
+          <input type="checkbox" id="check5" name="item1" value="Fazer mercado" onclick="mudaDiv(this4)">
+          <label for="check5">Fazer mercado
+            <p id="descrição" class="descricao">comprar sabonete, shampoo e pasta de dente.</p>
+          </label>
+        </article>
+        <article id="data" class="item-list-date"><a>20/08/2019</a></article>
+        <article class="item-list-button">
+          <button name="button" class="excluir">excluir</button><button name="button" class="ativar">ativar</button>
+        </article>
+      </main>
     </div>
   </div>
   <!-- Modal Section -->
-    <div class="bg-modal">
-    	<div class="modal-contents">
-    		<div class="close">+</div>
-        <hr></hr>
-        <h2>nova tarefa</h2>
-    		<form action="" class="form">
-          <a>nome</a>
-    			<input type="text">
-          <a>descrição</a>
-    			<input type="text">
-          <a>data</a>
-          <input type="text">
-          <button class="button-cancel">cancelar</button>
-          <button class="button-add"></button>
-    		</form>
-    	</div>
+  <div class="bg-modal">
+    <div class="modal-contents">
+      <div class="close">+</div>
+      <hr>
+      </hr>
+      <h2>nova tarefa</h2>
+      <form action="" class="form">
+        <a>nome</a>
+        <input type="text">
+        <a>descrição</a>
+        <input type="text">
+        <a>data</a>
+        <input type="text">
+        <button class="button-cancel">cancelar</button>
+        <button class="button-add"></button>
+      </form>
     </div>
+  </div>
 </body>
-<script>
-function mudaDiv(el) {
-  document.getElementsByClassName("item")[0].style.backgroundColor = el.checked ? "#FBFFFF" : "";
-  document.getElementsByClassName("item")[0].style.border = el.checked ? "0.1111px solid #F0F0F0" : "";
-
-}
-document.getElementById('button').addEventListener("click", function() {
-  document.querySelector('.bg-modal').style.display = "flex";
-});
-
-document.querySelector('.close').addEventListener("click", function() {
-  document.querySelector('.bg-modal').style.display = "none";
-});
-</script>
 </html>
