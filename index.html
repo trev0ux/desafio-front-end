@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet/less" type="text/css" href="css/styles.less" />
   <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+  <meta name="viewport" content="width=device-width">
   <script type="text/javascript" src="js/events.js"></script>
 </head>
 
@@ -16,7 +17,7 @@
       <hr>
       <div class="topo">
         <h2>LISTA DE TAREFAS
-          <input type="button" name="botao-ok" class="button" id="button">
+          <input type="button" name="botao-ok" class="button" id="button" onclick="abrirModal(this)">
         </h2>
       </div>
       <div class="filters">
@@ -24,21 +25,20 @@
         <span>data</span>
         <span>ações<span>
       </div>
-      <main id="list" class="item">
+      <main id="list1" class="item">
         <article class="item-list-name">
           <input type="checkbox" id="check1" name="item1" value="Fazer mercado" onclick="mudaDiv(this)">
-          <label for="check1">Fazer mercado
-            <p id="descrição" class="descricao">comprar sabonete, shampoo e pasta de dente.</p>
-          </label>
+          <label for="check1">
+            <p id="descrição" class="descricao">
         </article>
         <article id="data" class="item-list-date"><a>20/08/2019</a></article>
         <article class="item-list-button">
-          <button name="button" class="excluir">excluir</button><button name="button" class="desativar">desativar</button>
+          <button name="button" class="excluir" onclick="excluir(list1)">excluir</button><button name="button" class="desativar">desativar</button>
         </article>
       </main>
       <main id="list" class="item">
         <article class="item-list-name">
-          <input type="checkbox" id="check2" name="item1" value="Fazer mercado" onclick="mudaDiv(this1)">
+          <input type="checkbox" id="check2" name="item1" value="Fazer mercado" onclick="mudaDiv(list)">
           <label for="check2">Fazer mercado
             <p id="descrição" class="descricao">comprar sabonete, shampoo e pasta de dente.</p>
           </label>
@@ -72,9 +72,9 @@
           <button name="button" class="excluir">excluir</button><button name="button" class="desativar">desativar</button>
         </article>
       </main>
-      <main id="list" class="item">
+      <main id="list" class="item5">
         <article class="item-list-name">
-          <input type="checkbox" id="check5" name="item1" value="Fazer mercado" onclick="mudaDiv(this4)">
+          <input type="checkbox" id="check5" name="item5" value="Fazer mercado" onclick="disabled(this)" disabled>
           <label for="check5">Fazer mercado
             <p id="descrição" class="descricao">comprar sabonete, shampoo e pasta de dente.</p>
           </label>
@@ -89,7 +89,7 @@
   <!-- Modal Section -->
   <div class="bg-modal">
     <div class="modal-contents">
-      <div class="close">+</div>
+      <div class="close" onclick="fecharModal(this)">+</div>
       <hr>
       </hr>
       <h2>nova tarefa</h2>

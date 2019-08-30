@@ -14,6 +14,7 @@
   "author": "Lucas Amorim",
   "license": "ISC",
   "dependencies": {
-    "http-server": "^0.11.1"
+    "http-server": "^0.11.1",
+    "jquery": "^3.4.1"
   }
 }

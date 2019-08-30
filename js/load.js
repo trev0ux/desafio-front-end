@@ -1,34 +1,16 @@
-const app = document.getElementById('root')
+function lista() {
 
-const container = document.getElementById('div')
-container.setAttribute('container')
+  var saida = '';
 
-app.appendChild(container)
+  var lista = [];
 
-var request = new XMLHttpRequest()
-request.open('GET', 'http://127.0.0.1:8081/assets/tasks.json', true)
-request.onload = function() {
+  $.getJSON("assets/tasks.json", function(data) {
+      lista = data.lista;
 
-  var data = JSON.parse(this.response)
-  if (request.status >= 200 && request.status < 400) {
-    data.forEach(list => {
-      const label = document.getElementById('title')
-      p.textContent = `${movie.title}...`
+      for (i = 0; i < lista.length; i++) {
+        saida += lista[i].title;
+      }
 
-
-      const p = document.getElementById('p')
-      p.textContent = list.title
-
-
-      container.appendChild(title)
-      div.appendChild(label)
-      div.appendChild(p)
-    })
-  } else {
-    const errorMessage = document.createElement('marquee')
-    errorMessage.textContent = `Gah, it's not working!`
-    app.appendChild(errorMessage)
-  }
+      document.getElementById('item').innerHTML = saida;
+  });
 }
-
-request.send()

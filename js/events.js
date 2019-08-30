@@ -3,10 +3,25 @@ function mudaDiv(el) {
   document.getElementsByClassName("item")[0].style.border = el.checked ? "0.1111px solid #F0F0F0" : "";
 
 }
-document.getElementById('button').addEventListener("click", function() {
-  document.querySelector('.bg-modal').style.display = "flex";
-});
 
-document.querySelector('.close').addEventListener("click", function() {
-  document.querySelector('.bg-modal').style.display = "none";
-});
+
+function excluir(el) {
+  var display = document.getElementById("list").style.display;
+  if (display == "none")
+    document.getElementById("list1").style.display = 'block';
+  else
+    document.getElementById("list1").style.display = 'none';
+}
+
+
+function abrirModal(el) {
+  document.getElementById('button').addEventListener("click", function() {
+    document.querySelector('.bg-modal').style.display = "flex";
+  });
+}
+
+function fecharModal(el) {
+  document.querySelector('.close').addEventListener("click", function() {
+    document.querySelector('.bg-modal').style.display = "none";
+  });
+}
