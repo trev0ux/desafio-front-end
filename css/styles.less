@@ -5,7 +5,7 @@
 @font-variant: small-caps;
 @float: left;
 
-//COLORS USED IN SYSTEM//
+//CORES DO SISTEMA//
 
 #colors {
   1: #FBFFFF;
@@ -28,7 +28,7 @@
   justify-content: center;
   align-items: center;
 
-  //BOTTON ADD TASK AND CALL MODAL //
+  //BOTÃO PARA ADICIONAR TAREFA E CHAMAR O MODAL //
 
   .button.button {
       position: absolute;
@@ -40,7 +40,7 @@
       background-image: url(../img/button.png);
   }
 
-  //DIV OF TITLE AND BUTTON//
+  //DIV DO TITULO E DO BOTÃO//
 
   .topo {
     height: 20%;
@@ -49,8 +49,6 @@
 
 
    // DIV BOX //
-
-
 
 .box {
   width: 70%;
@@ -66,14 +64,19 @@
   *zoom: 1;
   *display: inline;
 
-  //ARTICLE GENERAL OF ITENS OF LIST//
+  //LISTA//
+  ul{
+     list-style-type: none;
+  }
 
   .item {
-    margin: 3px 20px 5px -5px;
+    margin: 3px 0px 0px -45px;
     width: 100%;
     height: 15%;
     border: 0.1111px solid #F0F0F0;
   }
+
+  //NOME //
 
   .item-list-name {
     height: 50px;
@@ -82,6 +85,7 @@
     margin: 7px;
   }
 
+  //DATA//
   .item-list-date {
     height: 50px;
     width: 300px;
@@ -93,6 +97,7 @@
     font-size: 14px;
   }
 
+// AÇÕES //
   .item-list-button {
     height: 50px;
     width: 150px;
@@ -101,7 +106,7 @@
 
   }
 
-  // DIV OF DESIGNATIONS: NOME, DATA E AÇÕES //
+  // DIV DAS CARACTERISTICAS: NOME, DATA E AÇÕES //
   .filters {
     height: 1%;
     width: 100%;
@@ -120,7 +125,7 @@
   }
 
 
-  // ACTIONS DESACTIVE, ACTIVE AND DELETE //
+  // BOTÃO DE AÇÃO PARA ATIVAR, DELETAR E DESATIVAR TAREFA //
 
 
   button.desativar {
@@ -158,7 +163,7 @@
 }}
 
 
-//CHECKBOX AND LABEL
+//CHECKBOX E O LABEL//
 
 
 input[type=checkbox] + label {
@@ -170,6 +175,8 @@ input[type=checkbox] + label {
   font-weight: semi-bold;
   font-size: 16px;
   color: #colors[2];
+
+  //DESCRIÇÃO DE TAREFA
 
   .descricao {
     font-weight: regular;
@@ -198,9 +205,6 @@ input[type=checkbox] + label:before {
   transition: .2s;
 }
 
-input[type=checkbox] + label:active:before {
-  transform: scale(0);
-}
 
 input[type=checkbox]:checked + label:before {
   background-color: #colors[2];
@@ -221,7 +225,9 @@ input[type=checkbox]:checked:disabled + label:before {
 
 }
 
-//LINE
+
+
+//LINHA
 
 hr {
   height: 4px;
@@ -230,7 +236,7 @@ hr {
   top: 0;
 }
 
-//TITLES
+//TITULOS
 
 h2 {
   font-family: @font-family;
