@@ -15,27 +15,33 @@
   <div class="container">
     <div class="box">
       <hr>
+      <!-- BOTTON AND TITLE -->
       <div class="topo">
         <h2>LISTA DE TAREFAS
           <input type="button" name="botao-ok" class="button" id="button" onclick="abrirModal(this)">
         </h2>
       </div>
+      <!-- CARACTERISTICAS DAS TAREFAS -->
       <div class="filters">
         <span>nome</span>
         <span>data</span>
         <span>ações<span>
       </div>
+      <!-- ITEM E CHECKBOX -->
       <main id="list1" class="item">
         <article class="item-list-name">
           <input type="checkbox" id="check1" name="item1" value="Fazer mercado" onclick="mudaDiv(this)">
           <label for="check1">
             <p id="descrição" class="descricao">
         </article>
+        <!-- DATA -->
         <article id="data" class="item-list-date"><a>20/08/2019</a></article>
         <article class="item-list-button">
+          <!-- AÇÕES -->
           <button name="button" class="excluir" onclick="excluir(list1)">excluir</button><button name="button-cancel" class="desativar" onclick="desativar(this)">desativar</button>
         </article>
       </main>
+      <!-- ITEM 2 -->
       <main id="list" class="item">
         <article class="item-list-name">
           <input type="checkbox" id="check2" name="item1" value="Fazer mercado" onclick="mudaDiv(list)">
@@ -48,6 +54,7 @@
           <button name="button" class="excluir">excluir</button><button name="button" class="desativar">desativar</button>
         </article>
       </main>
+      <!-- ITEM 3 -->
       <main id="list" class="item">
         <article class="item-list-name">
           <input type="checkbox" id="check3" name="item1" value="Fazer mercado" onclick="mudaDiv(this2)">
@@ -60,6 +67,7 @@
           <button name="button" class="excluir">excluir</button><button name="button" class="desativar">desativar</button>
         </article>
       </main>
+      <!-- ITEM 4 -->
       <main id="list" class="item">
         <article class="item-list-name">
           <input type="checkbox" id="check4" name="item1" value="Fazer mercado" onclick="mudaDiv(this3)">
@@ -72,6 +80,7 @@
           <button name="button" class="excluir">excluir</button><button name="button" class="desativar">desativar</button>
         </article>
       </main>
+      <!--ITEM 5  -->
       <main id="list" class="item5">
         <article class="item-list-name">
           <input type="checkbox" id="check5" name="item5" value="Fazer mercado" onclick="disabled(this)" disabled>

@@ -28,9 +28,9 @@ function fecharModal(el) {
 }
 
 function desativar(el){
-  document.getElementsByName('button-cancel').addEventListener.("click", function(){
-    document.getElementsByClassName("item")el.style.backgroundColor = "#707070";
-    document.getElementsByClassName("item")el.style.opacity = "1";
+//  document.getElementsByName('button-cancel').addEventListener.("click", function(){
+//    document.getElementsByClassName("item")el.style.backgroundColor = "#707070";
+//    document.getElementsByClassName("item")el.style.opacity = "1";
 
-  })
-}
+//  })
+//}
