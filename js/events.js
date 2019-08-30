@@ -6,12 +6,13 @@ function mudaDiv(el) {
 
 
 function excluir(el) {
-  var display = document.getElementById("list").style.display;
+  var display = document.getElementById("list1").style.display;
   if (display == "none")
     document.getElementById("list1").style.display = 'block';
   else
     document.getElementById("list1").style.display = 'none';
 }
+
 
 
 function abrirModal(el) {
@@ -24,4 +25,12 @@ function fecharModal(el) {
   document.querySelector('.close').addEventListener("click", function() {
     document.querySelector('.bg-modal').style.display = "none";
   });
+}
+
+function desativar(el){
+  document.getElementsByName('button-cancel').addEventListener.("click", function(){
+    document.getElementsByClassName("item")el.style.backgroundColor = "#707070";
+    document.getElementsByClassName("item")el.style.opacity = "1";
+
+  })
 }
